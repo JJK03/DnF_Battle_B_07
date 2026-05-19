@@ -13,6 +13,7 @@ classDiagram
     }
 
     class 플레이어 {
+        -플레이어id: String
         +플레이어체크(플레이어id: String) boolean
     }
 
@@ -26,11 +27,11 @@ classDiagram
     }
 
     class 전사 {
-        +스킬발동() int
+        +스킬발동() int %% 검 휘두르기
     }
 
     class 마법사 {
-        +스킬발동() int
+        +스킬발동() int %% 파이어볼
     }
 
     Create_Character_UI ..> 전투 : 사용
@@ -38,6 +39,6 @@ classDiagram
 
     전투 ..> 플레이어 : 검증 요청
     전투 --> 캐릭터 : 관리
-
+    
     캐릭터 <|-- 전사
     캐릭터 <|-- 마법사
