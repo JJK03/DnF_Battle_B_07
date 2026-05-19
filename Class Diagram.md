@@ -13,6 +13,7 @@ classDiagram
     }
 
     class 플레이어 {
+        -플레이어id: String
         +플레이어체크(플레이어id: String) boolean
     }
 
