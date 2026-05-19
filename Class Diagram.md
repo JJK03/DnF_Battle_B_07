@@ -13,7 +13,6 @@ classDiagram
     }
 
     class 플레이어 {
-        -플레이어id: String
         +플레이어체크(플레이어id: String) boolean
     }
 
@@ -27,11 +26,11 @@ classDiagram
     }
 
     class 전사 {
-        +스킬발동_검_휘두르기() int
+        +스킬발동() int
     }
 
     class 마법사 {
-        +스킬발동_파이어볼() int
+        +스킬발동() int
     }
 
     Create_Character_UI ..> 전투 : 사용

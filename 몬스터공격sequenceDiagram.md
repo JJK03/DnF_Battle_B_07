@@ -19,10 +19,10 @@ sequenceDiagram
 
     %% 직업별 고유 스킬 발동 및 데미지(int) 리턴
     alt 직업 == 전사
-        Battle->>Char: 스킬발동_검_휘두르기()
+        Battle->>Char: 스킬발동()
         Char-->>Battle: int (계산된 데미지 = 공격력 * 1.5)
     else 직업 == 마법사
-        Battle->>Char: 스킬발동_파이어볼()
+        Battle->>Char: 스킬발동()
         Char-->>Battle: int (계산된 데미지 = 공격력 * 2.0)
     end
     
